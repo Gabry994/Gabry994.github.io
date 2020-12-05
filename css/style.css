@@ -1,0 +1,80 @@
+  body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+    font-family: "Arial Black", Gadget, sans-serif;
+    background-color: black;
+
+}
+  table {
+    border-collapse: collapse;
+    width: 100%;
+}
+  td, th {
+    border: 1px solid #c264e8;
+    text-align: left;
+    padding: 8px;
+}
+  td input {
+    background-color: black;
+    text-transform: capitalize;
+    border: none;
+    color: #4287f5;
+    font-size: 22px;
+    font-family: "Arial Black", Gadget, sans-serif;
+  }
+
+h2 {
+  display: inline;
+  margin-left: 10px;
+}
+h1 {
+  display: inline;
+ text-shadow: 0 0 3px #c264e8, 3px 0 0 #b937ed, 0 3px 0 #b937ed, -3px 0 0 #b937ed, 0 -3px 0 #b937ed;
+}
+button {
+  border: none;
+  border: solid red 3px;
+  padding: 0 5px 0 5px;
+  border-radius: 15px;
+  background: black;
+  color: red;
+  font-size: 30px;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+}
+.imageDice {
+  width: 20%
+}
+.newgame {
+  margin: 40px;
+}
+.quantityPlayers a {
+  text-decoration: none;
+  margin: 0;
+  padding: 2px 6px 2px 6px;
+  border: 1px #b937ed solid;
+  color: #c264e8;
+  background-color: black;
+  font-size: 20px;
+}
+.arrow img{
+  display: inline;
+  float: left;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  height: 45px;
+}
+.arrow img:hover {
+transform: scale(1.5);
+}
+
+a:hover {
+  transition-duration: 0.7s;
+  background-color: #c264e8;
+  color: white;
+}
