@@ -1,6 +1,6 @@
 <!-- Dichiaro variabili -->
 
-var sound = new Audio('file:///C:/Users/Gabry/iCloudDrive/Coding/Progetti/Tokyo points/sound/blop.mp3');
+var sound = new Audio('/sound/blop.mp3');
 
 
 <!-- Assegna punti a inizio partita -->
