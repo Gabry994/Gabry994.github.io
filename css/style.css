@@ -72,7 +72,7 @@ a {
 .arrow img:hover {
 transform: scale(1.5);
 }
-#sound {
+.sound {
   width: 20px;
   height: 20px;
   border: 0;
