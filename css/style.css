@@ -78,3 +78,11 @@ a:hover {
   background-color: #c264e8;
   color: white;
 }
+.sound {
+  display: inline;
+  float: right;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  height: 45px;
+}
