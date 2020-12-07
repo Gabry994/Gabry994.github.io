@@ -1,7 +1,18 @@
 <!-- Dichiaro variabili -->
 
 var sound = new Audio('/sound/blop.mp3');
+var soundIsOn = true;
 
+<!-- Funzione suono -->
+function soundOn() {
+  soundIsOn = !soundIsOn;
+}
+
+function blop() {
+  if(soundIsOn) {
+    sound.play();
+  }
+}
 
 <!-- Assegna punti a inizio partita -->
 
@@ -19,7 +30,7 @@ var sound = new Audio('/sound/blop.mp3');
 
   function puntip1() {
 
-    sound.play();
+    blop();
     var punti = document.getElementById("punti1").innerHTML;
     console.log(punti);
     if ((punti == "0") || (punti == "L")) {
@@ -34,7 +45,7 @@ var sound = new Audio('/sound/blop.mp3');
 
   function puntip2() {
 
-    sound.play();
+    blop();
     var punti = document.getElementById("punti2").innerHTML;
     console.log(punti);
     if ((punti == "0") || (punti == "L")) {
@@ -49,7 +60,7 @@ var sound = new Audio('/sound/blop.mp3');
 
   function puntip3() {
 
-    sound.play();
+    blop();
     var punti = document.getElementById("punti3").innerHTML;
     console.log(punti);
     if ((punti == "0") || (punti == "L")) {
@@ -64,7 +75,7 @@ var sound = new Audio('/sound/blop.mp3');
 
   function puntip4() {
 
-    sound.play();
+    blop();
     var punti = document.getElementById("punti4").innerHTML;
     console.log(punti);
     if ((punti == "0") || (punti == "L")) {
