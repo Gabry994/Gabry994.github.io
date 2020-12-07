@@ -5,7 +5,13 @@ var soundIsOn = true;
 
 <!-- Funzione suono -->
 function soundOn() {
+  if (soundIsOn) {
+  document.querySelector('img[src="/Images/sound-on.png"]').src = "/Images/sound-off.png"
   soundIsOn = !soundIsOn;
+} else {
+  document.querySelector('img[src="/Images/sound-off.png"]').src = "/Images/sound-on.png"
+  soundIsOn = true;
+}
 }
 
 function blop() {
