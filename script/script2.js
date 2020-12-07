@@ -5,6 +5,7 @@ var soundIsOn = true;
 
 <!-- Funzione suono -->
 function soundOn() {
+  document.querySelector('img[src="/Images/sound-on.png"]').src = "/Images/sound-off.png"
   soundIsOn = !soundIsOn;
 }
 
