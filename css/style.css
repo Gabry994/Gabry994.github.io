@@ -61,28 +61,27 @@ a {
   background-color: black;
   font-size: 20px;
 }
-.arrow.left{
+.arrow a{
   display: inline;
-  float: left;
   border: 0;
   padding: 0;
   margin: 0;
   height: 45px;
+  float: left;
 }
 .arrow img:hover {
 transform: scale(1.5);
 }
-
+.sound {
+  width: 20%
+  display: inline;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  float: right;
+}
 a:hover {
   transition-duration: 0.7s;
   background-color: #c264e8;
   color: white;
-}
-.arrow.right {
-  display: inline;
-  float: right;
-  border: 0;
-  padding: 0;
-  margin: 0;
-  height: 10px;
 }
