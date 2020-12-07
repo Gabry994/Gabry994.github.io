@@ -11,7 +11,7 @@ function soundOn() {
 } else {
   document.querySelector('img[src="/Images/sound-off.png"]').src = "/Images/sound-on.png"
   soundIsOn = !soundIsOn;
-
+}
 }
 
 function blop() {
