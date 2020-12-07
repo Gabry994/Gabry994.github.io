@@ -1,6 +1,12 @@
 <!-- Dichiaro variabili -->
 
 var sound = new Audio('/sound/blop.mp3');
+var soundIsOn = true;
+
+
+function soundOn() {
+  soundIsOn = !soundIsOn;
+}
 
 
 <!-- Assegna punti a inizio partita -->
@@ -14,8 +20,9 @@ var sound = new Audio('/sound/blop.mp3');
 <!-- Sottrae punti quando si preme pulsante -->
 
   function puntip1() {
-
+    if (soundIsOn) {
     sound.play();
+  }
     var punti = document.getElementById("punti1").innerHTML;
     console.log(punti);
     if ((punti == "0") || (punti == "L")) {
