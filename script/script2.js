@@ -3,11 +3,16 @@
 var sound = new Audio('/sound/blop.mp3');
 var soundIsOn = true;
 
-
+<!-- Funzione suono -->
 function soundOn() {
   soundIsOn = !soundIsOn;
 }
 
+function blop() {
+  if(soundIsOn) {
+    sound.play();
+  }
+}
 
 <!-- Assegna punti a inizio partita -->
 
@@ -20,9 +25,8 @@ function soundOn() {
 <!-- Sottrae punti quando si preme pulsante -->
 
   function puntip1() {
-    if (soundIsOn) {
-    sound.play();
-  }
+
+    blop();
     var punti = document.getElementById("punti1").innerHTML;
     console.log(punti);
     if ((punti == "0") || (punti == "L")) {
@@ -37,7 +41,7 @@ function soundOn() {
 
   function puntip2() {
 
-    sound.play();
+    blop();
     var punti = document.getElementById("punti2").innerHTML;
     console.log(punti);
     if ((punti == "0") || (punti == "L")) {
