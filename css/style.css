@@ -72,9 +72,8 @@ a {
 .arrow img:hover {
 transform: scale(1.5);
 }
-.sound {
+.sound img {
   width: 20%
-  display: inline;
   border: 0;
   padding: 0;
   margin: 0;
