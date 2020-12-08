@@ -114,5 +114,5 @@ function soundWin() {
           document.getElementById("punti2").style.color = "white";
           document.getElementById("punti3").innerHTML = 6;
           document.getElementById("punti3").style.color = "white";
-          soundWin.play();
+          soundCoin.play();
         }
