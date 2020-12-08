@@ -22,6 +22,12 @@ function blop() {
   }
 }
 
+function soundWin() {
+  if(soundIsOn) {
+    soundWin.play();
+  }
+}
+
 <!-- Assegna punti a inizio partita -->
 
   function assegnapunti(points) {
@@ -85,5 +91,5 @@ function blop() {
           document.getElementById("punti1").style.color = "white";
           document.getElementById("punti2").innerHTML = 6;
           document.getElementById("punti2").style.color = "white";
-          soundWin.play();
+          soundWin();
         }
