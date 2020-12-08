@@ -1,7 +1,7 @@
 <!-- Dichiaro variabili -->
 
 var sound = new Audio('/sound/blop.mp3');
-var soundWin = new Audio('/sound/coin.mp3');
+var soundCoin = new Audio('/sound/coin.mp3');
 var soundIsOn = true;
 
 <!-- Funzione suono -->
@@ -24,7 +24,7 @@ function blop() {
 
 function soundWin() {
   if(soundIsOn) {
-    soundWin.play();
+    soundCoin.play();
   }
 }
 
