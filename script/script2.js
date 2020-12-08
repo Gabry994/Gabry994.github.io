@@ -1,9 +1,11 @@
 <!-- Dichiaro variabili -->
 
 var sound = new Audio('/sound/blop.mp3');
+var soundWin = new Audio('/sound/coin.mp3');
 var soundIsOn = true;
 
 <!-- Funzione suono -->
+
 function soundOn() {
   if (soundIsOn) {
   document.querySelector('img[src="/Images/sound-on.png"]').src = "/Images/sound-off.png"
@@ -83,4 +85,5 @@ function blop() {
           document.getElementById("punti1").style.color = "white";
           document.getElementById("punti2").innerHTML = 6;
           document.getElementById("punti2").style.color = "white";
+          soundWin.play();
         }
